@@ -15,179 +15,577 @@
     <link rel="stylesheet" type="text/css" href="assets/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="assets/revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/rev-settings.css">
 
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body class="body">
-    <header class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="logo">
-
+<body class="bl_frontend">
+    <header class="header">
+        <div class="container">
+            <div class="wrapper d-flex flex-row align-items-center justify-content-between">
+                <div class="logo me-3">
+                    <img src="assets/images/logo.png" alt="logo">
+                </div>
+                <div class="menu d-none d-lg-block me-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Về chúng tôi
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Cảm hứng thành lập
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Cảm hứng của chef
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Câu chuyện của món ăn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Sự kiện về khách hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Thư viện ảnh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Câu hỏi thường gặp
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Dịch vụ
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Course Menu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        BBQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Buffet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Event catering (Tea-break, Cocktail, Wedding)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Sharing menu (for big gathering)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Delivery/Ready to eat
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Thực đơn
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Appertizer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Salad
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Soup
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Hot dish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Tapas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Canape
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Cold cut
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Finger food
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Dessert
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Drinks
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Liên hệ
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Thông tin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Giỏ hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Đơn hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Lịch sử mua hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Sản phẩm ưa thích
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="">
+                                        Đăng xuất
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="action d-flex flex-row align-items-center justify-content-center">
+                    <a href="javascript:void(0);" class="btn_cart me-5">
+                        <i class="icofont-cart"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="toggle-menu-link d-lg-none">
+                        <i class="icofont-navigation-menu"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="menu">
-
-        </div>
-        <div class="action">
-
+        <div class="d-block d-lg-none">
+            <div class="wrap_menu_mb">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Về chúng tôi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Cảm hứng thành lập
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Cảm hứng của chef
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Câu chuyện của món ăn
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Sự kiện về khách hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Thư viện ảnh
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Câu hỏi thường gặp
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Dịch vụ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Course Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    BBQ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Buffet
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Event catering (Tea-break, Cocktail, Wedding)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Sharing menu (for big gathering)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Delivery/Ready to eat
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Thực đơn
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Appertizer
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Salad
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Soup
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Hot dish
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Tapas
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Canape
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Cold cut
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Finger food
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Dessert
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Drinks
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Liên hệ
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Tài khoản
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Thông tin
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Giỏ hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Đơn hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Lịch sử mua hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Sản phẩm ưa thích
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">
+                                    Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main class="main">
         <!-- parallax section -->
-        <section id="section-slider" class="fullwidthbanner-container" aria-label="section-slider">
+        <section class="section-slider" id="section-slider" class="fullwidthbanner-container" aria-label="section-slider">
             <div id="revolution-slider">
                 <ul>
                     <li data-transition="fade" data-slotamount="10" data-masterspeed="default" data-thumb="">
                         <!--  BACKGROUND IMAGE -->
-                        <img src="assets/images/slider/slide-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" >
+                        <img src="https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/05/slider3.jpg" title="Home" data-panzoom="d:25000;ss:100;se:115;" class="rev-slidebg" data-no-retina>
+                        <div class="content">
+                            <div class="tp-caption tp-teaser-1"
+                                 data-x="center"
+                                 data-y="160"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+                                 data-transform_out="opacity:0;y:-100;s:200;e:Power2.easeInOut;"
+                                 data-start="500"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on">
+                                <span class="id-color-2">Flavors to Satisfy</span>
+                            </div>
+                            <div class="tp-caption tp-title-1 text-center"
+                                 data-x="center"
+                                 data-y="210"
+                                 data-width="700"
+                                 data-height="none"
+                                 data-whitespace="wrap"
+                                 data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+                                 data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
+                                 data-start="600"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on">
+                                Where Flavor Meets Elegance
+                            </div>
+                            <div class="tp-caption text-center tp-text-1"
+                                 data-x="center"
+                                 data-y="390"
+                                 data-width="600"
+                                 data-height="none"
+                                 data-whitespace="wrap"
+                                 data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+                                 data-transform_out="opacity:0;y:-100;s:600;e:Power2.easeInOut;"
+                                 data-start="700">
+                                Prepare your palate for an unforgettable dining experience.
 
-                        <div class="tp-caption tp-teaser-1"
-                             data-x="center"
-                             data-y="160"
-                             data-width="none"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:200;e:Power2.easeInOut;"
-                             data-start="500"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-responsive_offset="on">
-                            <span class="id-color-2">Savor Perfection</span>
-                        </div>
-
-                        <div class="tp-caption"
-                             data-x="center"
-                             data-y="200"
-                             data-width=""
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
-                             data-start="600"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-responsive_offset="on">
-                            <img src="assets/images/misc/separator.svg" class="img-fluid" alt="">
-                        </div>
-
-                        <div class="tp-caption tp-title-1 text-center"
-                             data-x="center"
-                             data-y="225"
-                             data-width="700"
-                             data-height="none"
-                             data-whitespace="wrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
-                             data-start="600"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-responsive_offset="on">
-                            Experience Flavorful Creations
-                        </div>
-
-                        <div class="tp-caption text-center tp-text-1"
-                             data-x="center"
-                             data-y="400"
-                             data-width="600"
-                             data-height="none"
-                             data-whitespace="wrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:600;e:Power2.easeInOut;"
-                             data-start="700">
-                            Where artistry meets expertise to create a symphony of flavor.
-                        </div>
-
-                        <div class="tp-caption"
-                             data-x="center"
-                             data-y="470"
-                             data-width="none"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:800;e:Power2.easeInOut;"
-                             data-start="800">
-                            <a href="#" class="btn-line">View Menu</a>
+                            </div>
+                            <div class="tp-caption"
+                                 data-x="center"
+                                 data-y="480"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+                                 data-transform_out="opacity:0;y:-100;s:800;e:Power2.easeInOut;"
+                                 data-start="800">
+                                <a href="#" class="btn">Chi tiết</a>
+                            </div>
                         </div>
                     </li>
-
                     <li data-transition="fade" data-slotamount="10" data-masterspeed="default" data-thumb="">
                         <!--  BACKGROUND IMAGE -->
                         <img src="assets/images/slider/slide-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" >
-
-                        <div class="tp-caption tp-teaser-1"
-                             data-x="center"
-                             data-y="160"
-                             data-width="none"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:200;e:Power2.easeInOut;"
-                             data-start="500"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-responsive_offset="on">
-                            <span class="id-color-2">Flavors to Satisfy</span>
-                        </div>
-
-                        <div class="tp-caption"
-                             data-x="center"
-                             data-y="200"
-                             data-width=""
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
-                             data-start="600"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-responsive_offset="on">
-                            <img src="assets/images/misc/separator.svg" class="img-fluid" alt="">
-                        </div>
-
-                        <div class="tp-caption tp-title-1 text-center"
-                             data-x="center"
-                             data-y="225"
-                             data-width="700"
-                             data-height="none"
-                             data-whitespace="wrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
-                             data-start="600"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-responsive_offset="on">
-                            Where Flavor Meets Elegance
-                        </div>
-
-                        <div class="tp-caption text-center tp-text-1"
-                             data-x="center"
-                             data-y="400"
-                             data-width="600"
-                             data-height="none"
-                             data-whitespace="wrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:600;e:Power2.easeInOut;"
-                             data-start="700">
-                            Prepare your palate for an unforgettable dining experience.
-                        </div>
-
-                        <div class="tp-caption"
-                             data-x="center"
-                             data-y="470"
-                             data-width="none"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
-                             data-transform_out="opacity:0;y:-100;s:800;e:Power2.easeInOut;"
-                             data-start="800">
-                            <a href="#" class="btn-line">View Menu</a>
+                        <div class="content">
+                            <div class="tp-caption tp-teaser-1"
+                                 data-x="center"
+                                 data-y="160"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+                                 data-transform_out="opacity:0;y:-100;s:200;e:Power2.easeInOut;"
+                                 data-start="500"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on">
+                                <span class="id-color-2">Flavors to Satisfy</span>
+                            </div>
+                            <div class="tp-caption tp-title-1 text-center"
+                                 data-x="center"
+                                 data-y="200"
+                                 data-width="700"
+                                 data-height="none"
+                                 data-whitespace="wrap"
+                                 data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+                                 data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
+                                 data-start="600"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on">
+                                Where Flavor Meets Elegance
+                            </div>
+                            <div class="tp-caption text-center tp-text-1"
+                                 data-x="center"
+                                 data-y="390"
+                                 data-width="600"
+                                 data-height="none"
+                                 data-whitespace="wrap"
+                                 data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+                                 data-transform_out="opacity:0;y:-100;s:600;e:Power2.easeInOut;"
+                                 data-start="700">
+                                Prepare your palate for an unforgettable dining experience.
+                            </div>
+                            <div class="tp-caption"
+                                 data-x="center"
+                                 data-y="470"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+                                 data-transform_out="opacity:0;y:-100;s:800;e:Power2.easeInOut;"
+                                 data-start="800">
+                                <a href="#" class="btn">Chi tiết</a>
+                            </div>
                         </div>
                     </li>
-
                 </ul>
             </div>
+            <a href="#about" class="btn-down">
+                <i class="icofont-bubble-down"></i>
+            </a>
         </section>
         <!-- parallax section close -->
+
+        <!-- about section -->
+        <section class="section-padding section-about" id="about">
+            <div class="container">
+                <div class="row align-items-center flex-lg-row-reverse">
+                    <div class="col-lg-6">
+                        <!-- có video thì thêm class wrap-image-video-->
+                        <div class="wrap-image-animation wrap-image-video" style="background-image: url('assets/images/timeline-img1.jpg')">
+                            <div class="wrap-img">
+                                <img src="assets/images/timeline-img1.jpg" alt="" class="img-main img-fluid">
+                                <!-- có video thì có nút này-->
+                                <a href="javascript:void(0);" class="btn-play-yt">
+                                    <i class="icofont-play-alt-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="wrapper">
+                            <div class="section-title">
+                                <div class="sub-title">
+                                    <h4>Về chúng tôi</h4>
+                                </div>
+                                <div class="title">
+                                    <h1>
+                                        Silver Plate Catering
+                                    </h1>
+                                </div>
+                                <p>
+                                    <img src="assets/images/flower-decor.webp">
+                                </p>
+                            </div>
+                            <div class="section-content text-center pe-lg-4">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                            <div class="wrap-btn text-center">
+                                <a href="about.html" class="btn">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about section -->
+
     </main>
     <footer class="footer">
 

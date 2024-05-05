@@ -1,5 +1,8 @@
-@mixin SegoeUIVariable(){
-    font-family: 'SegoeUIVariable', sans-serif;
+@mixin Roboto(){
+    font-family: 'Roboto', sans-serif;
+}
+@mixin PinyonScript(){
+  font-family: 'PinyonScript', sans-serif;
 }
 @mixin text-style($fs, $lh, $cl, $fw:400){
     font-size: $fs;
