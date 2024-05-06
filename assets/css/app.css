@@ -878,3 +878,70 @@ html {
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis; }
+  .bl_frontend .footer {
+    padding: 40px 0;
+    background-color: #131212; }
+    .bl_frontend .footer .f-head {
+      padding-bottom: 40px;
+      border-bottom: 1px solid #333333;
+      margin-bottom: 40px; }
+      .bl_frontend .footer .f-head .wrap-social a {
+        margin-right: 10px;
+        color: #fff;
+        font-size: 20px; }
+      .bl_frontend .footer .f-head .logo {
+        text-align: center; }
+        .bl_frontend .footer .f-head .logo img {
+          width: auto;
+          height: 70px; }
+    .bl_frontend .footer .f-body .w_info {
+      text-align: center; }
+      .bl_frontend .footer .f-body .w_info .title {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        text-transform: capitalize; }
+      .bl_frontend .footer .f-body .w_info .desc {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        line-height: 32px;
+        color: #808080; }
+        .bl_frontend .footer .f-body .w_info .desc a {
+          color: #fff; }
+    .bl_frontend .footer .f-body .w_opening {
+      border-right: 1px solid #333;
+      border-left: 1px solid #333;
+      text-align: center; }
+      .bl_frontend .footer .f-body .w_opening .title {
+        font-family: 'PinyonScript', sans-serif;
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #c59d5f;
+        position: relative; }
+        .bl_frontend .footer .f-body .w_opening .title:before {
+          bottom: -10px;
+          width: 50px;
+          height: 2px;
+          content: '';
+          display: block;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          background-color: #505050; }
+      .bl_frontend .footer .f-body .w_opening .date {
+        color: #c59d5f;
+        font-size: 16px;
+        margin-bottom: 30px; }
+      .bl_frontend .footer .f-body .w_opening .time {
+        color: #fff;
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        line-height: 26px;
+        position: relative;
+        width: 100%;
+        z-index: 1; }
