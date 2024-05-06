@@ -222,6 +222,7 @@
         @include PinyonScript();
         font-size: 35px;
         color: #c59d5f;
+        text-shadow: 1px 1px 3px #222;
       }
 
       .tp-title-1{
@@ -231,12 +232,14 @@
         letter-spacing: -.025em;
         color:#fff;
         @include line_text(2);
+        text-shadow: 1px 1px 3px #222;
       }
 
       .tp-text-1{
         color:#fff;
         font-size: 18px;
         @include line_text(3);
+        text-shadow: 1px 1px 3px #222;
       }
     }
     .section-about{
