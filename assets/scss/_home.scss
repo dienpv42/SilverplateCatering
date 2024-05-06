@@ -242,6 +242,51 @@
         text-shadow: 1px 1px 3px #222;
       }
     }
+    .section-banner{
+      background-color: rgba(0, 0, 0, .05);
+      clear: both;
+      float: left;
+      margin: 0 0 80px;
+      padding: 150px 0 80px;
+      position: relative;
+      width: 100%;
+      .section-main-bg{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, .05);
+        bottom: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        &:before {
+          bottom: 0;
+          content: '';
+          left: 0;
+          margin: auto;
+          position: absolute;
+          right: 0;
+          top: 0;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .section-main-title{
+        .title{
+          >*{
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-align: inherit;
+            text-transform: capitalize;
+            color: #ffffff;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
     .section-about{
       .section-content{
         margin-bottom: 35px;

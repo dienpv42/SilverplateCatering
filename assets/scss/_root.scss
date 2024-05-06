@@ -521,3 +521,29 @@ html{
   font-size: 15px;
   color: #fff;
 }
+.breadcrumb{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+  a{
+    color: #fff;
+    font-size: 16px;
+  }
+  i{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+    color: #fff;
+    font-size: 25px;
+  }
+  .current{
+    color: #c59d5f;
+  }
+}

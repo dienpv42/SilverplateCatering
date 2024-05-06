@@ -517,6 +517,29 @@ html {
   font-size: 15px;
   color: #fff; }
 
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0; }
+  .breadcrumb a {
+    color: #fff;
+    font-size: 16px; }
+  .breadcrumb i {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+    color: #fff;
+    font-size: 25px; }
+  .breadcrumb .current {
+    color: #c59d5f; }
+
 .bl_frontend {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -700,6 +723,43 @@ html {
       overflow: hidden;
       text-overflow: ellipsis;
       text-shadow: 1px 1px 3px #222; }
+  .bl_frontend .main .section-banner {
+    background-color: rgba(0, 0, 0, 0.05);
+    clear: both;
+    float: left;
+    margin: 0 0 80px;
+    padding: 150px 0 80px;
+    position: relative;
+    width: 100%; }
+    .bl_frontend .main .section-banner .section-main-bg {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.05);
+      bottom: 0;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: -1; }
+      .bl_frontend .main .section-banner .section-main-bg:before {
+        bottom: 0;
+        content: '';
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.6); }
+    .bl_frontend .main .section-banner .section-main-title .title > * {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-align: inherit;
+      text-transform: capitalize;
+      color: #ffffff;
+      margin-bottom: 20px; }
   .bl_frontend .main .section-about .section-content {
     margin-bottom: 35px; }
     .bl_frontend .main .section-about .section-content p {
