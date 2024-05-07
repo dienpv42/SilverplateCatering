@@ -144,16 +144,6 @@
     .section-padding{
       padding: 70px 0;
     }
-    .section-background{
-      background-color: #f4f1ea;
-      .section-title{
-        p{
-          img{
-            background-color: #f4f1ea;
-          }
-        }
-      }
-    }
     .section-title{
       text-align: center;
       .sub-title{
@@ -203,6 +193,47 @@
         }
       }
     }
+    .section-title-border{
+      text-align: center;
+      >*{
+        display: inline-block;
+        font-size: 16px;
+        padding: 14px 40px 15px;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #000;
+        border: 2px solid #000;
+      }
+    }
+    .section-background{
+      background-color: #f4f1ea;
+      .section-title{
+        p{
+          img{
+            background-color: #f4f1ea;
+          }
+        }
+      }
+    }
+    .section-background-dark{
+      background-color: #000000;
+      .section-title{
+        p{
+          img{
+            background-color: #000000;
+          }
+        }
+      }
+      .section-title-border{
+        >*{
+          color: #ffffff;
+          border: 2px solid #c59d5f;
+        }
+      }
+    }
+
     .section-slider{
       position: relative;
       .btn-down{
@@ -506,6 +537,69 @@
         }
       }
     }
+    .section-about-chef{
+      .section-content{
+        .wrap-content{
+          .description{
+            max-width: 1024px;
+            margin: 0 auto 30px;
+            font-size: 16px;
+            color: #041527;
+            line-height: 2;
+            text-align: center;
+          }
+          .name{
+            color: #041527;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+          }
+          .title{
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: capitalize;
+            width: 100%;
+            color: #c59d5f;
+            text-align: center;
+          }
+        }
+
+      }
+    }
+    .section-about-food{
+      .section-content{
+        position: relative;
+        &:before {
+          @media screen and (min-width: 992px) {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0px;
+            height: 100%;
+            width: 1px;
+            z-index: 1;
+            background-color: #c59d5f;
+          }
+        }
+        &:after {
+          @media screen and (min-width: 992px) {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0px;
+            height: 5px;
+            width: 5px;
+            z-index: 1;
+            background-color: #c59d5f;
+          }
+        }
+      }
+    }
   }
   .footer{
     padding: 40px 0;
@@ -552,9 +646,13 @@
         }
       }
       .w_opening{
-        border-right: 1px solid #333;
-        border-left: 1px solid #333;
+        margin: 30px 0;
         text-align: center;
+        @media screen and (min-width: 992px) {
+          margin: 0;
+          border-right: 1px solid #333;
+          border-left: 1px solid #333;
+        }
         .title{
           @include PinyonScript();
           font-size: 32px;
