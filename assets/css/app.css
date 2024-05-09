@@ -1240,6 +1240,40 @@ html {
         margin-bottom: 15px; }
       .bl_frontend .main .section-menu .section-content .wrap-list-menu .wrapper .item .content .wrap-btn {
         text-align: left; }
+  .bl_frontend .main .section-ordering-steps .section-content .item {
+    height: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 30px; }
+    .bl_frontend .main .section-ordering-steps .section-content .item .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      left: 50%;
+      top: 0px;
+      transform: translateX(-50%);
+      background-color: #f4f1ea;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #041527;
+      font-weight: 500;
+      transition: all .5s ease 0s; }
+    .bl_frontend .main .section-ordering-steps .section-content .item .content {
+      padding: 35px 20px 20px;
+      border: 2px solid #041527;
+      height: 100%;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #041527;
+      font-weight: 500;
+      transition: all .5s ease 0s; }
+    .bl_frontend .main .section-ordering-steps .section-content .item:hover .number {
+      color: #c59d5f; }
+    .bl_frontend .main .section-ordering-steps .section-content .item:hover .content {
+      border-color: #c59d5f; }
   .bl_frontend .footer {
     padding: 40px 0;
     background-color: #131212; }
