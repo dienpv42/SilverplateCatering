@@ -16,6 +16,34 @@
 
 
     $(document).ready(function() {
+        var lastScrollTop = 0;
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop();
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                $('.header').removeClass('up').addClass('down');
+            } else {
+                // Scrolling up
+                $('.header').removeClass('down').addClass('up');
+            }
+            lastScrollTop = scrollTop;
+        });
+        $('.menu .nav-link.dropdown-toggle').click(function(event) {
+            let $this = $(this);
+            let $dropdownMenu = $this.next('.dropdown-menu');
+            if ($dropdownMenu.hasClass('show')) {
+                window.location.href = $this.attr('href');
+            } else {
+                event.preventDefault();
+                $('.dropdown-menu').removeClass('show');
+                $dropdownMenu.addClass('show');
+            }
+        });
+        $(document).click(function(event) {
+            if (!$(event.target).closest('.menu .nav-item.dropdown').length) {
+                $('.menu .dropdown-menu').removeClass('show');
+            }
+        });
         var slide = new Swiper(".slide_swiper", {
             slidesPerView: 3,
             speed: 1000,
