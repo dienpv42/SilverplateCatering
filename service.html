@@ -617,7 +617,7 @@
         </div>
     </div>
 
-    <section class="section-ordering-steps section-padding section-background">
+    <section class="section-ordering-steps section-padding">
         <div class="container">
             <div class="section-title">
                 <div class="title">
@@ -676,7 +676,7 @@
         </div>
     </section>
 
-    <section class="section-list-service section-padding">
+    <section class="section-list-service section-padding section-background">
         <div class="container">
             <div class="section-title">
                 <div class="sub-title">
@@ -772,6 +772,26 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-list-service section-padding" id="section-order-service" style="display: none">
+        <div class="container">
+            <div class="section-title">
+                <div class="sub-title">
+                    <h4>Course Menu</h4>
+                </div>
+                <div class="title">
+                    <h2>
+                        Menu 3-course
+                    </h2>
+                </div>
+                <p>
+                    <img src="assets/images/flower-decor.webp">
+                </p>
+            </div>
+            <div class="section-content">
                 <div class="wrap-choice-group mb-5" id="group-food">
                     <div class="wrapper-check mb-4">
                         <div class="label-title">
@@ -783,7 +803,7 @@
                                     <div class="form-check d-flex flex-row align-items-center">
                                         <input class="form-check-input form-check-input-val" name="menu[]" type="checkbox" value="1" id="flexCheckMenu-1">
                                         <label class="form-check-label d-flex flex-row align-items-center" for="flexCheckMenu-1">
-                                            <img src="assets/images/pdt13.jpg" alt="">                                
+                                            <img src="assets/images/pdt13.jpg" alt="">
                                             <div class="text">
                                                 Appertizer
                                             </div>
@@ -794,7 +814,7 @@
                                     <div class="form-check d-flex flex-row align-items-center">
                                         <input class="form-check-input form-check-input-val" name="menu[]" type="checkbox" value="2" id="flexCheckMenu-2">
                                         <label class="form-check-label d-flex flex-row align-items-center" for="flexCheckMenu-2">
-                                            <img src="assets/images/pdt13.jpg" alt="">                                
+                                            <img src="assets/images/pdt13.jpg" alt="">
                                             <div class="text">
                                                 Salad
                                             </div>
@@ -805,7 +825,7 @@
                                     <div class="form-check d-flex flex-row align-items-center">
                                         <input class="form-check-input form-check-input-val" name="menu[]" type="checkbox" value="3" id="flexCheckMenu-3">
                                         <label class="form-check-label d-flex flex-row align-items-center" for="flexCheckMenu-3">
-                                            <img src="assets/images/pdt13.jpg" alt="">                                
+                                            <img src="assets/images/pdt13.jpg" alt="">
                                             <div class="text">
                                                 Soup
                                             </div>
@@ -816,7 +836,7 @@
                                     <div class="form-check d-flex flex-row align-items-center">
                                         <input class="form-check-input form-check-input-val" name="menu[]" type="checkbox" value="4" id="flexCheckMenu-4">
                                         <label class="form-check-label d-flex flex-row align-items-center" for="flexCheckMenu-4">
-                                            <img src="assets/images/pdt13.jpg" alt="">                                
+                                            <img src="assets/images/pdt13.jpg" alt="">
                                             <div class="text">
                                                 Tapas
                                             </div>
@@ -827,7 +847,7 @@
                                     <div class="form-check d-flex flex-row align-items-center">
                                         <input class="form-check-input form-check-input-val" name="menu[]" type="checkbox" value="5" id="flexCheckMenu-5">
                                         <label class="form-check-label d-flex flex-row align-items-center" for="flexCheckMenu-5">
-                                            <img src="assets/images/pdt13.jpg" alt="">                                
+                                            <img src="assets/images/pdt13.jpg" alt="">
                                             <div class="text">
                                                 Main
                                             </div>
@@ -838,7 +858,7 @@
                                     <div class="form-check d-flex flex-row align-items-center">
                                         <input class="form-check-input form-check-input-val" name="menu[]" type="checkbox" value="6" id="flexCheckMenu-6">
                                         <label class="form-check-label d-flex flex-row align-items-center" for="flexCheckMenu-6">
-                                            <img src="assets/images/pdt13.jpg" alt="">                                
+                                            <img src="assets/images/pdt13.jpg" alt="">
                                             <div class="text">
                                                 Dessert
                                             </div>
@@ -848,13 +868,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="wrapper-check">
+                    <div class="wrapper-check mb-4">
                         <div class="label-title">
                             Chọn nhóm thực đơn của bạn
                         </div>
-                        <div class="wrap-check">
-                            
+                        <div class="wrap-form-check">
+                            <div class="row">
+                                <div class="col-lg-4 mb-3">
+                                    <div class="form-check d-flex flex-row align-items-center">
+                                        <input class="form-check-input form-check-input-val" name="menu" type="radio" value="1" id="flexRadioMenu-1">
+                                        <label class="form-check-label d-flex flex-row align-items-center" for="flexRadioMenu-1">
+                                            <img src="assets/images/pdt13.jpg" alt="">
+                                            <div class="text">
+                                                Finger foood
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <div class="form-check d-flex flex-row align-items-center">
+                                        <input class="form-check-input form-check-input-val" name="menu" type="radio" value="2" id="flexRadioMenu-2">
+                                        <label class="form-check-label d-flex flex-row align-items-center" for="flexRadioMenu-2">
+                                            <img src="assets/images/pdt13.jpg" alt="">
+                                            <div class="text">
+                                                Finger foood & Hot dish
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="wrap-btn d-flex flex-row align-items-center justify-content-end">
+                        <a href="javascript:void(0)" class="btn-default btn-next-menu">
+                            Tiếp theo
+                        </a>
                     </div>
                 </div>
                 <div class="wrap-choice-menu" id="choice-menu">
@@ -957,7 +1005,7 @@
                             Trước
                         </a>
                         <a href="javascript:void(0)" class="btn-default btn-add-service-cart">
-                            Thêm vào giỏ hàng 
+                            Thêm vào giỏ hàng
                         </a>
                         <a href="javascript:void(0)" class="btn-default btn-next">
                             Tiếp theo
@@ -1055,7 +1103,15 @@
                 $(this).text('Chọn');
             }
         });
+
+        $(".btn-order-service").click(function(){
+            $("#section-order-service").show();
+            $('html, body').animate({
+                scrollTop: $("#section-order-service").offset().top
+            }, 1000);
+        });
     });
+</script>
 </script>
 </body>
 </html>
