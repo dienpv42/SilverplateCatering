@@ -22,9 +22,11 @@
             if (scrollTop > lastScrollTop) {
                 // Scrolling down
                 $('.header').removeClass('up').addClass('down');
+                $('.wrap_cart').addClass('scroll');
             } else {
                 // Scrolling up
                 $('.header').removeClass('down').addClass('up');
+                $('.wrap_cart').removeClass('scroll');
             }
             lastScrollTop = scrollTop;
         });
@@ -104,6 +106,16 @@
         $(this).toggleClass('active');
         $('.toggle-menu-link').toggleClass('open');
         $('.wrap_menu_mb').toggleClass('active');
+    });
+    
+    $(document).on('click', '.btn_cart', function(){
+        $(this).toggleClass('open');
+        $('.wrap_cart').toggleClass('active');
+    });
+
+    $(document).on('click', '.btn-close-cart', function(){
+        $('.btn_cart').removeClass('open');
+        $('.wrap_cart').removeClass('active');
     });
 
     $(window).scroll(function () {

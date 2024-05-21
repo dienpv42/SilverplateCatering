@@ -19,150 +19,276 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body class="bl_frontend">
-<header class="header">
-    <div class="container">
-        <div class="wrapper d-flex flex-row align-items-center justify-content-between">
-            <div class="logo me-3">
-                <img src="assets/images/logo.png" alt="logo">
+    <header class="header">
+        <div class="container">
+            <div class="wrapper d-flex flex-row align-items-center justify-content-between">
+                <div class="logo me-3">
+                    <img src="assets/images/logo.png" alt="logo">
+                </div>
+                <div class="menu d-none d-lg-block me-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown">
+                                Về chúng tôi
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="events.html">
+                                        Sự kiện về khách hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="blog.html">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="gallery.html">
+                                        Thư viện ảnh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="faqs.html">
+                                        Câu hỏi thường gặp
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Dịch vụ
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="service.html">
+                                        Course Menu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="service.html">
+                                        BBQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="service.html">
+                                        Buffet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="service.html">
+                                        Event catering (Tea-break, Cocktail, Wedding)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="service.html">
+                                        Sharing menu (for big gathering)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="service.html">
+                                        Delivery/Ready to eat
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="menu.html">
+                                Thực đơn
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">
+                                Liên hệ
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Thông tin tài khoản
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Lịch sử đơn hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="action d-flex flex-row align-items-center justify-content-center">
+                    <a href="javascript:void(0)" class="btn_cart me-3 has_order">
+                        <i class="icofont-cart"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="toggle-menu-link d-lg-none">
+                        <i class="icofont-navigation-menu"></i>
+                    </a>
+                </div>
             </div>
-            <div class="menu d-none d-lg-block me-3">
+        </div>
+        <div class="d-block d-lg-none">
+            <div class="wrap_menu_mb">
                 <ul class="nav">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">
                             Trang chủ
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown">
-                            Về chúng tôi
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="nav-item">
+                        <div class="wrap-link d-flex flex-row align-items-center justify-content-between">
+                            <a class="nav-link" href="about.html">
+                                Về chúng tôi
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-1">
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </div>
+                        <ul class="collapse" id="collapse-1">
                             <li>
-                                <a class="dropdown-item" href="about.html#section-1">
+                                <a class="collapse-item" href="about.html#section-1">
                                     Cảm hứng thành lập
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="about.html#section-2">
+                                <a class="collapse-item" href="about.html#section-2">
                                     Cảm hứng của chef
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="about.html#section-3">
+                                <a class="collapse-item" href="about.html#section-3">
                                     Câu chuyện của món ăn
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="events.html">
+                                <a class="collapse-item" href="events.html">
                                     Sự kiện về khách hàng
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="blog.html">
+                                <a class="collapse-item" href="blog.html">
                                     Tin tức
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="gallery.html">
+                                <a class="collapse-item" href="gallery.html">
                                     Thư viện ảnh
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="faqs.html">
+                                <a class="collapse-item" href="faqs.html">
                                     Câu hỏi thường gặp
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            Dịch vụ
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="nav-item">
+                        <div class="wrap-link d-flex flex-row align-items-center justify-content-between">
+                            <a class="nav-link" href="service.html">
+                                Dịch vụ
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-2">
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </div>
+                        <ul class="collapse" id="collapse-2">
                             <li>
-                                <a class="dropdown-item" href="service.html">
+                                <a class="collapse-item" href="service.html">
                                     Course Menu
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="service.html">
+                                <a class="collapse-item" href="service.html">
                                     BBQ
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="service.html">
+                                <a class="collapse-item" href="service.html">
                                     Buffet
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="service.html">
+                                <a class="collapse-item" href="service.html">
                                     Event catering (Tea-break, Cocktail, Wedding)
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="service.html">
+                                <a class="collapse-item" href="service.html">
                                     Sharing menu (for big gathering)
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="service.html">
+                                <a class="collapse-item" href="service.html">
                                     Delivery/Ready to eat
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            Thực đơn
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="nav-item">
+                        <div class="wrap-link d-flex flex-row align-items-center justify-content-between">
+                            <a class="nav-link" href="menu.html">
+                                Thực đơn
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-3">
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </div>
+                        <ul class="collapse" id="collapse-3">
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Appertizer
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Salad
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Soup
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Hot dish
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Tapas
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Canape
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Cold cut
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Finger food
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Dessert
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="menu.html">
+                                <a class="collapse-item" href="menu.html">
                                     Drinks
                                 </a>
                             </li>
@@ -175,169 +301,304 @@
                     </li>
                 </ul>
             </div>
-            <div class="action d-flex flex-row align-items-center justify-content-center">
-                <a href="cart.html" class="btn_cart me-3">
-                    <i class="icofont-cart"></i>
-                </a>
-                <a href="javascript:void(0)" class="toggle-menu-link d-lg-none">
-                    <i class="icofont-navigation-menu"></i>
+        </div>
+        <div class="wrap_cart">
+            <div class="wrapper_head d-flex flex-row align-items-center justify-content-between">
+                <div class="title-cart">
+                    Giỏ hàng
+                </div>
+                <a href="javascript:void(0)" class="btn-close-cart">
+                    <i class="icofont-close-circled"></i>
                 </a>
             </div>
+            <div class="wrapper">
+                <!-- dat mon the dich vu -->
+                <div class="item_cart">
+                    <div class="title_service">
+                        Course menu
+                    </div>
+                    <div class="w_content">
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_cart">
+                    <div class="title_service">
+                        BBQ
+                    </div>
+                    <div class="w_content">
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end dat mon the dich vu -->
+    
+                <!-- dat menu le -->
+                <div class="item_cart">
+                    <div class="title_service">
+                        Các món lẻ
+                    </div>
+                    <div class="w_content">
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    Chicken breast salad
+                                </div>
+                                <div class="w_qty">
+                                    <div class="form-group">
+                                        <a href="javascript:void(0);" class="btn_minus_sl">
+                                            <i class="icofont-minus"></i>
+                                        </a>
+                                        <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                        <a href="javascript:void(0);" class="btn_plus_sl">
+                                            <i class="icofont-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    100.000 đ
+                                </div>
+                            </div>
+                            <a href="#" class="btn-remove">
+                                <i class="icofont-close"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end dat menu le -->
+            </div>
+            <div class="wrapper_footer">
+                <div class="wrap-total d-flex flex-row align-items-center justify-content-between">
+                    <div class="label">
+                        Tổng tiền:
+                    </div>
+                    <div class="price">
+                        2.000.000 Đ
+                    </div>
+                </div>
+                <div class="wrap-btn text-center">
+                    <a href="cart.html" class="btn-view-cart">
+                        Xem chi tiết giỏ hàng
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="d-block d-lg-none">
-        <div class="wrap_menu_mb">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        Trang chủ
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-1">
-                        Về chúng tôi
-                    </a>
-                    <ul class="collapse" id="collapse-1">
-                        <li>
-                            <a class="collapse-item" href="about.html#section-1">
-                                Cảm hứng thành lập
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="about.html#section-2">
-                                Cảm hứng của chef
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="about.html#section-3">
-                                Câu chuyện của món ăn
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="events.html">
-                                Sự kiện về khách hàng
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="blog.html">
-                                Tin tức
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="gallery.html">
-                                Thư viện ảnh
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="faqs.html">
-                                Câu hỏi thường gặp
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-2">
-                        Dịch vụ
-                    </a>
-                    <ul class="collapse" id="collapse-2">
-                        <li>
-                            <a class="collapse-item" href="service.html">
-                                Course Menu
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="service.html">
-                                BBQ
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="service.html">
-                                Buffet
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="service.html">
-                                Event catering (Tea-break, Cocktail, Wedding)
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="service.html">
-                                Sharing menu (for big gathering)
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="service.html">
-                                Delivery/Ready to eat
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapse-3">
-                        Thực đơn
-                    </a>
-                    <ul class="collapse" id="collapse-3">
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Appertizer
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Salad
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Soup
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Hot dish
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Tapas
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Canape
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Cold cut
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Finger food
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Dessert
-                            </a>
-                        </li>
-                        <li>
-                            <a class="collapse-item" href="menu.html">
-                                Drinks
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        Liên hệ
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</header>
+    </header>
 <main class="main">
     <div class="section-banner">
         <div class="section-main-bg" style="background-image: url('assets/images/d01.jpg')">
@@ -346,17 +607,16 @@
             <div class="container">
                 <div class="title">
                     <h1>
-                        Thực đơn - Salad
+                        Thực đơn 
                     </h1>
                 </div>
                 <div class="breadcrumb">
-                    <a href="#">Trang chủ</a><i class="icofont-spoon-and-fork"></i><span class="current">Thực đơn - Salad</span>
+                    <a href="#">Trang chủ</a><i class="icofont-spoon-and-fork"></i><span class="current">Thực đơn</span>
                 </div>
             </div>
         </div>
     </div>
-
-    <section class="section-menu section-padding">
+    <section class="section-menu section-menu-service section-padding">
         <div class="container">
             <div class="section-title">
                 <div class="sub-title">
@@ -375,167 +635,310 @@
                 </div>
             </div>
             <div class="section-content">
-
-                <div class="wrap-list-menu">
-                    <div class="title-cate">
-                        <h3>Salad</h3>
-                    </div>
-                    <div class="wrapper">
-                        <div class="item d-flex flex-column flex-lg-row align-items-center">
-                            <div class="image">
-                                <img src="assets/images/pdt13.jpg" alt="">
-                                <!-- có rank-a rank-b rank-c rank-d rank-e e css rùi :))-->
-                                <span class="rank rank-a">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="menu-1-tab" data-bs-toggle="pill" data-bs-target="#menu-1" type="button" role="tab" aria-controls="menu-1" aria-selected="true">Salad</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="menu-2-tab" data-bs-toggle="pill" data-bs-target="#menu-2" type="button" role="tab" aria-controls="menu-2" aria-selected="false">Hot dish</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="menu-3-tab" data-bs-toggle="pill" data-bs-target="#menu-3" type="button" role="tab" aria-controls="menu-3" aria-selected="false">Soup</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="menu-1" role="tabpanel" aria-labelledby="menu-1-tab" tabindex="0">
+                        <div class="wrap-list-menu">
+                            <div class="title-cate">
+                                <h3>Salad</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
                                 Rank A
                             </span>
-                            </div>
-                            <div class="content">
-                                <div class="title">
-                                    <div class="name">
-                                        <a href="#">
-                                            Chicken breast salad, green beans, potatoes & mustard sauce
-                                        </a>
                                     </div>
-                                    <div class="w-price">
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
                                         <span class="price">
                                             130k
                                         </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="description">
-                                    Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
+                                Rank A
+                            </span>
+                                    </div>
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
+                                        <span class="price">
+                                            130k
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="wrap-btn">
-                                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
+                                Rank A
+                            </span>
+                                    </div>
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
+                                        <span class="price">
+                                            130k
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item d-flex flex-column flex-lg-row align-items-center">
-                            <div class="image">
-                                <img src="assets/images/pdt13.jpg" alt="">
-                                <!-- có rank-a rank-b rank-c rank-d rank-e e css rùi :))-->
-                                <span class="rank rank-b">
-                                Rank B
-                            </span>
+                    </div>
+                    <div class="tab-pane fade" id="menu-2" role="tabpanel" aria-labelledby="menu-2-tab" tabindex="0">
+                        <div class="wrap-list-menu">
+                            <div class="title-cate">
+                                <h3>Hot dish</h3>
                             </div>
-                            <div class="content">
-                                <div class="title">
-                                    <div class="name">
-                                        <a href="#">
-                                            Chicken breast salad, green beans, potatoes & mustard sauce
-                                        </a>
+                            <div class="wrapper">
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
+                                Rank A
+                            </span>
                                     </div>
-                                    <div class="w-price">
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
                                         <span class="price">
                                             130k
                                         </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="description">
-                                    Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
+                                Rank A
+                            </span>
+                                    </div>
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
+                                        <span class="price">
+                                            130k
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="wrap-btn">
-                                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
+                                Rank A
+                            </span>
+                                    </div>
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
+                                        <span class="price">
+                                            130k
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item d-flex flex-column flex-lg-row align-items-center">
-                            <div class="image">
-                                <img src="assets/images/pdt13.jpg" alt="">
-                                <!-- có rank-a rank-b rank-c rank-d rank-e e css rùi :))-->
-                                <span class="rank rank-c">
-                                Rank C
-                            </span>
+                    </div>
+                    <div class="tab-pane fade" id="menu-3" role="tabpanel" aria-labelledby="menu-3-tab" tabindex="0">
+                        <div class="wrap-list-menu">
+                            <div class="title-cate">
+                                <h3>Soup</h3>
                             </div>
-                            <div class="content">
-                                <div class="title">
-                                    <div class="name">
-                                        <a href="#">
-                                            Chicken breast salad, green beans, potatoes & mustard sauce
-                                        </a>
+                            <div class="wrapper">
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
+                                Rank A
+                            </span>
                                     </div>
-                                    <div class="w-price">
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
                                         <span class="price">
                                             130k
                                         </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="description">
-                                    Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
-                                </div>
-                                <div class="wrap-btn">
-                                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item d-flex flex-column flex-lg-row align-items-center">
-                            <div class="image">
-                                <img src="assets/images/pdt13.jpg" alt="">
-                                <!-- có rank-a rank-b rank-c rank-d rank-e e css rùi :))-->
-                                <span class="rank rank-d">
-                                Rank D
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
+                                Rank A
                             </span>
-                            </div>
-                            <div class="content">
-                                <div class="title">
-                                    <div class="name">
-                                        <a href="#">
-                                            Chicken breast salad, green beans, potatoes & mustard sauce
-                                        </a>
                                     </div>
-                                    <div class="w-price">
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
                                         <span class="price">
                                             130k
                                         </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="description">
-                                    Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
-                                </div>
-                                <div class="wrap-btn">
-                                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item d-flex flex-column flex-lg-row align-items-center">
-                            <div class="image">
-                                <img src="assets/images/pdt13.jpg" alt="">
-                                <!-- có rank-a rank-b rank-c rank-d rank-e e css rùi :))-->
-                                <span class="rank rank-e">
-                                Rank E
+                                <div class="item d-flex flex-column flex-lg-row align-items-center">
+                                    <div class="image">
+                                        <img src="assets/images/pdt13.jpg" alt="">
+                                        
+                                        <span class="rank rank-a">
+                                Rank A
                             </span>
-                            </div>
-                            <div class="content">
-                                <div class="title">
-                                    <div class="name">
-                                        <a href="#">
-                                            Chicken breast salad, green beans, potatoes & mustard sauce
-                                        </a>
                                     </div>
-                                    <div class="w-price">
+                                    <div class="content">
+                                        <div class="title">
+                                            <div class="name">
+                                                <a href="#">
+                                                    Chicken breast salad, green beans, potatoes & mustard sauce
+                                                </a>
+                                            </div>
+                                            <div class="w-price">
                                         <span class="price">
                                             130k
                                         </span>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
+                                        </div>
+                                        <div class="wrap-btn">
+                                            <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="description">
-                                    Salad lườn gà, đậu đũa chần, khoai tây bi, sốt mù tạt
-                                </div>
-                                <div class="wrap-btn">
-                                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </section>
-
 </main>
 <footer class="footer">
     <div class="container">

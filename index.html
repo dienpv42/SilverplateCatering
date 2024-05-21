@@ -106,10 +106,27 @@
                             Liên hệ
                         </a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Tài khoản
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Lịch sử đơn hàng
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="action d-flex flex-row align-items-center justify-content-center">
-                <a href="cart.html" class="btn_cart me-3">
+                <a href="javascript:void(0)" class="btn_cart me-3 has_order">
                     <i class="icofont-cart"></i>
                 </a>
                 <a href="javascript:void(0)" class="toggle-menu-link d-lg-none">
@@ -286,7 +303,300 @@
         </div>
     </div>
     <div class="wrap_cart">
+        <div class="wrapper_head d-flex flex-row align-items-center justify-content-between">
+            <div class="title-cart">
+                Giỏ hàng
+            </div>
+            <a href="javascript:void(0)" class="btn-close-cart">
+                <i class="icofont-close-circled"></i>
+            </a>
+        </div>
+        <div class="wrapper">
+            <!-- dat mon the dich vu -->
+            <div class="item_cart">
+                <div class="title_service">
+                    Course menu
+                </div>
+                <div class="w_content">
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item_cart">
+                <div class="title_service">
+                    BBQ
+                </div>
+                <div class="w_content">
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end dat mon the dich vu -->
 
+            <!-- dat menu le -->
+            <div class="item_cart">
+                <div class="title_service">
+                    Các món lẻ
+                </div>
+                <div class="w_content">
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="assets/images/pdt13.jpg" alt="" class="img-food">
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                Chicken breast salad
+                            </div>
+                            <div class="w_qty">
+                                <div class="form-group">
+                                    <a href="javascript:void(0);" class="btn_minus_sl">
+                                        <i class="icofont-minus"></i>
+                                    </a>
+                                    <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl" value="1">
+                                    <a href="javascript:void(0);" class="btn_plus_sl">
+                                        <i class="icofont-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                100.000 đ
+                            </div>
+                        </div>
+                        <a href="#" class="btn-remove">
+                            <i class="icofont-close"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end dat menu le -->
+        </div>
+        <div class="wrapper_footer">
+            <div class="wrap-total d-flex flex-row align-items-center justify-content-between">
+                <div class="label">
+                    Tổng tiền:
+                </div>
+                <div class="price">
+                    2.000.000 Đ
+                </div>
+            </div>
+            <div class="wrap-btn text-center">
+                <a href="cart.html" class="btn-view-cart">
+                    Xem chi tiết giỏ hàng
+                </a>
+            </div>
+        </div>
     </div>
 </header>
 <main class="main">
