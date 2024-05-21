@@ -32,8 +32,8 @@ html{
   border-width: 2px;
   border-style: solid;
   color: #ffffff;
-  background-color: #c59d5f;
-  border-color: #c59d5f;
+  background-color: #c7a243;
+  border-color: #c7a243;
   border-radius: 0;
   transition: all .3s;
   margin: 10px;
@@ -49,7 +49,7 @@ html{
     bottom: -10px;
     border-top: none;
     border-right: none;
-    border-color: #c59d5f;
+    border-color: #c7a243;
     transition: all .3s linear;
   }
 
@@ -65,14 +65,14 @@ html{
     top: -10px;
     border-bottom: none;
     border-left: none;
-    border-color: #c59d5f;
+    border-color: #c7a243;
     transition: all .3s linear;
   }
 
   &:hover {
     background: transparent;
-    border-color: #c59d5f;
-    color: #c59d5f;
+    border-color: #c7a243;
+    color: #c7a243;
 
     &:after {
       width: 100%;
@@ -98,15 +98,15 @@ html{
   border-width: 2px;
   border-style: solid;
   color: #ffffff;
-  background-color: #c59d5f;
-  border-color: #c59d5f;
+  background-color: #c7a243;
+  border-color: #c7a243;
   border-radius: 0;
   transition: all .3s;
   white-space: nowrap;
   &:hover {
     background: transparent;
-    border-color: #c59d5f;
-    color: #c59d5f;
+    border-color: #c7a243;
+    color: #c7a243;
   }
 }
 .btn-delete{
@@ -148,13 +148,13 @@ html{
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 60px;
-      color: #c59d5f;
+      color: #c7a243;
       opacity: 0;
       visibility: hidden;
       transition: all .3s;
 
       &:hover {
-        color: #c59d5f;
+        color: #c7a243;
       }
     }
 
@@ -466,20 +466,20 @@ html{
     left: -1px;
     border-bottom-color: transparent;
     border-right-color: transparent;
-    border-top-color: #c59d5f;
-    border-left-color: #c59d5f;
+    border-top-color: #c7a243;
+    border-left-color: #c7a243;
   }
   &:after {
     right: -1px;
     bottom: -1px;
     border-top-color: transparent;
     border-left-color: transparent;
-    border-right-color: #c59d5f;
-    border-bottom-color: #c59d5f;
+    border-right-color: #c7a243;
+    border-bottom-color: #c7a243;
   }
   &:hover{
     .title,.icon{
-      color: #c59d5f;
+      color: #c7a243;
     }
     &:before {
       border-width: 5px;
@@ -519,7 +519,7 @@ html{
       margin-bottom: 15px;
       i{
         font-size: 20px;
-        color: #c59d5f;
+        color: #c7a243;
         margin: 0 3px;
       }
     }
@@ -562,7 +562,7 @@ html{
       line-height: 1.3;
       transition: all .3s linear;
       text-align: center;
-      color: #c59d5f;
+      color: #c7a243;
     }
   }
 }
@@ -583,12 +583,12 @@ html{
   .page-item{
     margin: 0 2px;
     .page-link{
-      border-color: #c59d5f;
-      color: #c59d5f;
+      border-color: #c7a243;
+      color: #c7a243;
       &.active{
         color: #ffffff;
-        background-color: #c59d5f;
-        border-color: #c59d5f;
+        background-color: #c7a243;
+        border-color: #c7a243;
       }
       &:focus{
         box-shadow: unset;
@@ -619,7 +619,7 @@ html{
     font-size: 25px;
   }
   .current{
-    color: #c59d5f;
+    color: #c7a243;
   }
 }
 .image-flip{
@@ -655,7 +655,7 @@ html{
 }
 .item-food-history{
   padding: 25px 0;
-  border-bottom: 1px solid #c59d5f;
+  border-bottom: 1px solid #c7a243;
   @media screen and (min-width: 992px) {
     border: 0;
   }
@@ -685,7 +685,7 @@ html{
       transition: all 0.3s linear;
     }
     .time{
-      color: #c59d5f;
+      color: #c7a243;
     }
     .desc{
       color: #fff;
@@ -731,7 +731,7 @@ html{
         margin: 0;
         font-weight: 700;
         width: 100%;
-        color: #c59d5f;
+        color: #c7a243;
         transition: all 0.3s linear;
       }
     }
@@ -739,7 +739,7 @@ html{
   &:hover{
     .content{
       .title{
-        color: #c59d5f;
+        color: #c7a243;
       }
     }
     .image{
@@ -824,11 +824,11 @@ html{
           }
           &:hover{
             background-color: unset;
-            color: #c59d5f;
+            color: #c7a243;
             padding-left: 20px;
             &::after{
               left: 0;
-              background-color: #c59d5f;
+              background-color: #c7a243;
             }
           }
           &:focus{
