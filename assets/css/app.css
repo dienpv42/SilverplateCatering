@@ -199,6 +199,22 @@ html {
     border-color: #c7a243;
     color: #c7a243; }
 
+.btn-danger {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 10px 8px;
+  border-width: 2px;
+  border-style: solid;
+  color: #ffffff;
+  background-color: #d31c1c;
+  border-color: #d31c1c;
+  border-radius: 0;
+  transition: all .3s; }
+  @media screen and (min-width: 992px) {
+    .btn-danger {
+      font-size: 18px;
+      padding: 8px 30px 8px; } }
+
 .btn-delete {
   position: relative;
   display: inline-block;
@@ -211,6 +227,9 @@ html {
   border-color: #d31c1c;
   border-radius: 0;
   transition: all .3s; }
+
+.color--theme {
+  color: #c7a243; }
 
 .wrap-image-animation {
   margin: auto auto auto 13px;
@@ -843,6 +862,44 @@ html {
     width: 100%; }
   .wrapper-gallery .grid-item:hover img {
     transform: scale(1.1); }
+
+.wrap-icon-fixed {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 20; }
+  @media (min-width: 991px) {
+    .wrap-icon-fixed {
+      bottom: 20px;
+      left: 20px; } }
+  .wrap-icon-fixed ul li {
+    margin-bottom: 10px; }
+    .wrap-icon-fixed ul li:last-child {
+      margin-bottom: 0; }
+    .wrap-icon-fixed ul li a {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12); }
+      @media (min-width: 991px) {
+        .wrap-icon-fixed ul li a {
+          width: 50px;
+          height: 50px; } }
+      .wrap-icon-fixed ul li a img {
+        width: 30px; }
+        @media (min-width: 991px) {
+          .wrap-icon-fixed ul li a img {
+            width: 40px; } }
+      .wrap-icon-fixed ul li a i {
+        font-size: 30px; }
+        @media (min-width: 991px) {
+          .wrap-icon-fixed ul li a i {
+            font-size: 40px; } }
 
 .bl_frontend {
   font-family: 'Roboto', sans-serif;
@@ -2159,6 +2216,164 @@ html {
       .bl_frontend .main .section-form-cart .form-control:focus {
         border-color: #c7a243;
         box-shadow: unset; }
+    .bl_frontend .main .section-account {
+      padding: 150px 0; }
+      .bl_frontend .main .section-account .wrapper {
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.12); }
+        .bl_frontend .main .section-account .wrapper .wrap_left {
+          box-shadow: inset -1px 0 0 #f0f0f0;
+          padding: 0 0 15px;
+          height: 100%; }
+          .bl_frontend .main .section-account .wrapper .wrap_left .head {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #8c8c8c;
+            padding: 16px 12px; }
+            .bl_frontend .main .section-account .wrapper .wrap_left .head img {
+              width: 40px;
+              margin-right: 8px; }
+            .bl_frontend .main .section-account .wrapper .wrap_left .head .name {
+              width: calc(100% - 48px); }
+          .bl_frontend .main .section-account .wrapper .wrap_left .navbar-nav .nav-item .nav-link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 14px 16px 14px 20px; }
+            .bl_frontend .main .section-account .wrapper .wrap_left .navbar-nav .nav-item .nav-link .nav-link-icon {
+              margin-right: 10px;
+              font-size: 15px; }
+            .bl_frontend .main .section-account .wrapper .wrap_left .navbar-nav .nav-item .nav-link.active {
+              background: #f6eac8;
+              box-shadow: inset -3px 0 0 0 #c7a243;
+              color: #c7a243; }
+        .bl_frontend .main .section-account .wrapper .wrap_right {
+          padding: 20px 15px; }
+          @media (min-width: 991px) {
+            .bl_frontend .main .section-account .wrapper .wrap_right {
+              padding: 40px 20px; } }
+          .bl_frontend .main .section-account .wrapper .wrap_right .wrap-title {
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            font-weight: 900;
+            color: #041527;
+            text-transform: capitalize;
+            margin-bottom: 20px; }
+          .bl_frontend .main .section-account .wrapper .wrap_right .form-group {
+            margin-bottom: 10px; }
+            .bl_frontend .main .section-account .wrapper .wrap_right .form-group .form-label {
+              position: relative;
+              color: #353f4f;
+              font-size: 15px;
+              line-height: 1;
+              font-weight: 500;
+              margin-bottom: 12px; }
+            .bl_frontend .main .section-account .wrapper .wrap_right .form-group .form-control {
+              border: 1px solid #d5d5d5;
+              color: #505050;
+              border-radius: 0;
+              padding: 8px 15px;
+              font-size: 15px; }
+              .bl_frontend .main .section-account .wrapper .wrap_right .form-group .form-control:focus {
+                border-color: #c7a243;
+                box-shadow: unset; }
+          .bl_frontend .main .section-account .wrapper .wrap_right .btn-small {
+            font-size: 14px; }
+    .bl_frontend .main .section-login {
+      padding: 150px 0; }
+      .bl_frontend .main .section-login .wrapper {
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 15px;
+        overflow: hidden; }
+        .bl_frontend .main .section-login .wrapper .wrap-banner {
+          background-size: cover;
+          background-position: center center;
+          height: 580px; }
+          .bl_frontend .main .section-login .wrapper .wrap-banner.wrap-banner-register {
+            height: 800px; }
+          .bl_frontend .main .section-login .wrapper .wrap-banner .section-title .sub-title > * {
+            color: #c7a243; }
+          .bl_frontend .main .section-login .wrapper .wrap-banner .section-title .title > * {
+            color: #fff; }
+          .bl_frontend .main .section-login .wrapper .wrap-banner .section-title .section-content {
+            color: #fff;
+            line-height: 1.5; }
+        .bl_frontend .main .section-login .wrapper .btn-google {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          color: #333;
+          font-size: 17px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          transition: all 400ms ease-in-out;
+          line-height: 1;
+          font-weight: 500;
+          padding: 0.9rem 1.8rem;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 8px; }
+          @media (min-width: 1200px) {
+            .bl_frontend .main .section-login .wrapper .btn-google {
+              padding: 0.8rem 1.7rem; } }
+          .bl_frontend .main .section-login .wrapper .btn-google img {
+            position: relative;
+            width: 22px;
+            height: 22px;
+            top: -2px;
+            right: 5px; }
+          .bl_frontend .main .section-login .wrapper .btn-google:hover {
+            border-color: #c7a243; }
+        .bl_frontend .main .section-login .wrapper .separator-line {
+          display: flex;
+          width: 100%;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+          text-align: center;
+          font-size: 17px;
+          font-weight: 500;
+          margin: 25px 0px 30px; }
+          .bl_frontend .main .section-login .wrapper .separator-line::before {
+            content: "";
+            border-top: 2px solid rgba(0, 0, 0, 0.1);
+            margin: 0 15px 0 0;
+            flex: 1 0 20px; }
+          .bl_frontend .main .section-login .wrapper .separator-line::after {
+            content: "";
+            border-top: 2px solid rgba(0, 0, 0, 0.1);
+            margin: 0 0 0 15px;
+            flex: 1 0 20px; }
+        .bl_frontend .main .section-login .wrapper .text-confirm {
+          font-size: 16px;
+          line-height: 1.4; }
+          .bl_frontend .main .section-login .wrapper .text-confirm a {
+            color: #c7a243; }
+        .bl_frontend .main .section-login .wrapper .form-group {
+          margin-bottom: 20px; }
+          .bl_frontend .main .section-login .wrapper .form-group .form-label {
+            position: relative;
+            color: #353f4f;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+            margin-bottom: 12px;
+            padding-left: 5px; }
+          .bl_frontend .main .section-login .wrapper .form-group .form-control {
+            border: 1px solid #d5d5d5;
+            color: #505050;
+            border-radius: 0;
+            padding: 15px; }
+            .bl_frontend .main .section-login .wrapper .form-group .form-control:focus {
+              border-color: #c7a243;
+              box-shadow: unset; }
+        .bl_frontend .main .section-login .wrapper .btn-submit {
+          width: 100%;
+          text-align: center;
+          padding: 17px; }
   .bl_frontend .footer {
     padding: 40px 0;
     background-color: #131212; }
