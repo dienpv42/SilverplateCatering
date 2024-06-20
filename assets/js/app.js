@@ -16,10 +16,10 @@
 
 
     $(document).ready(function() {
-        var lastScrollTop = 0;
+        let lastScrollTop = 0;
         $(window).scroll(function() {
             var scrollTop = $(this).scrollTop();
-            if (scrollTop > lastScrollTop) {
+            if (scrollTop > lastScrollTop && scrollTop > 200) {
                 // Scrolling down
                 $('.header').removeClass('up').addClass('down');
                 $('.wrap_cart').addClass('scroll');
@@ -30,6 +30,7 @@
             }
             lastScrollTop = scrollTop;
         });
+
         $('.menu .nav-link.dropdown-toggle').click(function(event) {
             let $this = $(this);
             let $dropdownMenu = $this.next('.dropdown-menu');
