@@ -713,6 +713,27 @@
         </div>
     </section>
     <!-- end about section -->
+    <div class="container">
+        <div class="section-padding section-counter" id="counter-section">
+            <div class="wrapper d-flex flex-row align-items-center justify-content-center">
+                <div class="counter">
+                    <div class="wrap">
+                        <span class="count" data-count="10">0</span><br> <span class="text">Năm kinh nghiệm</span>
+                    </div>
+                </div>
+                <div class="counter">
+                    <div class="wrap">
+                        <span class="count" data-count="2500">0</span><br> <span class="text">Events</span>
+                    </div>
+                </div>
+                <div class="counter">
+                    <div class="wrap">
+                        <span class="count" data-count="120000">0</span><br> <span class="text">Khách hàng được phục vụ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="section-2" class="section-about-chef section-background section-padding">
         <div class="container">
@@ -1105,5 +1126,47 @@
             });
     });
 </script>
+    <script>
+        $(document).ready(function() {
+            var counters = $("#counter-section .count");
+            var counterSection = $("#counter-section");
+            var started = false;
+            function formatNumber(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            function startCounting() {
+                counters.each(function() {
+                    var $this = $(this);
+                    var countTo = $this.attr('data-count');
+                    $({ countNum: $this.text() }).animate({
+                            countNum: countTo
+                        },
+                        {
+                            duration: 3000,
+                            easing: 'swing',
+                            step: function() {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function() {
+                                $this.text(formatNumber(this.countNum));
+                            }
+                        });
+                });
+                started = true;
+                sessionStorage.setItem('counterStarted', 'true');
+            }
+
+            if (sessionStorage.getItem('counterStarted') === 'true') {
+                startCounting();
+            } else {
+                $(window).scroll(function() {
+                    if (!started && $(window).scrollTop() + $(window).height() >= counterSection.offset().top) {
+                        startCounting();
+                    }
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
