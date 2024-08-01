@@ -25,10 +25,6 @@ html{
   display: inline-block;
   font-size: 14px;
   padding: 6px 10px 6px;
-  @media screen and (min-width: 992px) {
-    font-size: 16px;
-    padding: 6px 20px 6px;
-  }
   border-width: 2px;
   border-style: solid;
   color: #ffffff;
@@ -37,6 +33,14 @@ html{
   border-radius: 0;
   transition: all .3s;
   margin: 10px;
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    padding: 6px 20px 6px;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 3px 10px 3px;
+    font-size: 13px;
+  }
   &:before {
     position: absolute;
     content: "";
