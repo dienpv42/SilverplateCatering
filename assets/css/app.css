@@ -963,7 +963,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 1054;
     transition: all .3s linear; }
     .bl_frontend .header.up {
       transform: translateY(0); }
