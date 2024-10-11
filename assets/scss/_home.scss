@@ -1581,7 +1581,7 @@
                     margin-right: 20px;
                     @media screen and (max-width: 991px) {
                       width: 100%;
-                      height: auto;
+                      height: 100px;
                       margin: 0 0 10px;
                     }
                   }
@@ -1636,11 +1636,20 @@
             .wrapper {
               margin-bottom: 20px;
               .item {
-                padding: 10px;
-
-
-                &:last-child {
-                  margin-bottom: 0;
+                @media screen and (max-width: 991px) {
+                  background-color: #f4f4f4;
+                  padding: 10px;
+                  width: calc(50% - 10px);
+                  margin: 0 5px 10px;
+                }
+                > .d-flex{
+                  @media screen and (max-width: 991px) {
+                    height: 100%;
+                    gap: 10px;
+                    flex-direction: column !important;
+                    justify-content: center !important;
+                    align-items: center;
+                  }
                 }
 
                 .image {
@@ -1653,7 +1662,7 @@
                     margin-right: 20px;
                   }
                   @media screen and (max-width: 991px) {
-                    width: 100px;
+                    width: 50px;
                     height: auto;
                     margin-bottom: 10px;
                   }
@@ -1664,8 +1673,10 @@
                     object-fit: cover;
                     object-position: center;
                     @media screen and (max-width: 991px) {
-                      width: 100%;
-                      height: auto;
+                      width: 50px;
+                      height: 50px;
+                      object-fit: cover;
+                      object-position: center;
                     }
                   }
 
@@ -1691,7 +1702,11 @@
                     width: calc(100% - 200px);
                   }
                   @media screen and (max-width: 991px) {
-                    width: calc(100% - 115px);
+                    width: 100%;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                   }
                   .title {
                     position: relative;
@@ -1704,6 +1719,7 @@
                     }
                     @media screen and (max-width: 991px) {
                       margin-bottom: 0;
+                      padding: 0;
                     }
                     &:after {
                       border-color: #eaeaeb;
@@ -1734,6 +1750,8 @@
                       }
                       @media screen and (max-width: 991px) {
                         font-size: 13px;
+                        padding-right: 0;
+                        background-color: #f4f4f4;
                       }
                     }
 
@@ -1744,6 +1762,7 @@
                       }
                       @media screen and (max-width: 991px) {
                         display: flex;
+                        background-color: #f4f4f4;
                       }
                       .price {
                         transition: all .5s ease 0s;
