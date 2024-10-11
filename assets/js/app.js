@@ -108,15 +108,28 @@
         $('.toggle-menu-link').toggleClass('open');
         $('.wrap_menu_mb').toggleClass('active');
     });
-    
+
+    // Kiểm tra nếu kích thước màn hình từ 991px trở xuống
+    function isMobile() {
+        return window.matchMedia('(max-width: 991px)').matches;
+    }
+
     $(document).on('click', '.btn_cart', function(){
         $(this).toggleClass('open');
         $('.wrap_cart').toggleClass('active');
+
+        if (isMobile()) {
+            $('html').css('overflow', 'hidden');
+        }
     });
 
     $(document).on('click', '.btn-close-cart', function(){
         $('.btn_cart').removeClass('open');
         $('.wrap_cart').removeClass('active');
+
+        if (isMobile()) {
+            $('html').css('overflow', 'auto');
+        }
     });
 
     $(window).scroll(function () {

@@ -253,6 +253,9 @@
       box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
       display: flex;
       flex-direction: column;
+      @media screen and (max-width: 991px) {
+        padding-bottom: 110px;
+      }
       &.active {
         transform: unset;
       }
@@ -1297,7 +1300,7 @@
                   }
                 }
               }
-              &.active {
+              &.active , .active{
                 background-color: #faebd7;
                 .image {
                   &::after {
@@ -1810,6 +1813,7 @@
                   }
                   .btn_select_food{
                     @media screen and (max-width: 991px) {
+                      color: #fff;
                       border-color: #008000;
                       background-color: #008000;
                     }
@@ -2068,7 +2072,7 @@
                 }
               }
 
-              &.active {
+              &.active , .active{
                 background-color: #faebd7;
                 .image {
                   &::after {
